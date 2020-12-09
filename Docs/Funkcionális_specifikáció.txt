@@ -2,22 +2,81 @@ Funkcionális specifikáció:
 
 1. Áttekintés
 
+Egy olyan webalkalmazást fejlesztünk ami megnyerő felülettel rendelkezik és ezen keresztül tudunk navigálni több játék között.
+A főoldalon található menü segítségével tudunk váltani a játékok között. Főoldalon és a játékok felülete 
+melett is találhatóak felületek ahol hirdetéseket lehet feladni. A hírdetésekre kattuntva azonnal tovább 
+viszi a felhasználót a kívánt oldalra. A fő cél hogy az oldal minél több látogatót vonzzon és lehetőleg fent tartsa
+a figyelmüket.
+
+A memória játék felületén kitudjuk választani a kívánt nehézséget majd elindítani a játékot. 
+A megfelelő párok kiválasztásával tudunk előre haladni a játékban és pontot szerezni.
+
 2. Jelenlegi helyzet
+
+A webaalkalmazás fő célja hogy a felület lehetőséget adjon reklámok elhelyezésének. Az addiktív játékok segítenek a felhasználókat
+az oldalra csábítani. Biztosítani kell hogy az oldalon később újabb játékokat lehessen megjeleníteni.
 
 3. Követelménylista
 
+Főoldal: 
+	-tartalmazza a menüt
+Menü:
+	-Játékok lista szerűen felsorolva.
+Lista:
+	-Játék kis képe
+	-Játék megnevezése
+	-Játék leírása
+	-Játék szabályrendszere
+	-Gomb ami átvisz a játék oldalára
+	
+Memória játék:
+	-Nehézség választás (több kártya)
+	-Játék elindítása
+	-Játék felület (kártyák)
+	-Játékban elért pontok
+	
+Memória játék oldal:
+	-Játék indítása
+	-Játék nehézségének kiválasztása
+	-Játékfelület a kattintható kártyákkal
+	-Az aktuális pontszám kijelzése
+
 4. Jelenlegi üzleti folyamatok modellje
+
+Az ilyen fajta webes felületek igen gyakoriak manapság. A legismertebb felületek ami felhasználók nézettsége alapján 
+tartalmaz hírdetéseket és ez az alapja a pénzszerzésének a hírpotálok. Ezeken az oldalakon a legfrisebb híreket teszik
+ki ez vonza oda a látogatókat. Ezekkel az lehet a probléma hogy ha nincs aktuális lényegesebb, érdekesebb hír akkor nem tudnak 
+mit megosztani. Valamint nagyon sokszor ezek az oldalak ugynevezett álhíreket szoktak megosztani "clickbait" céljából hogy megnöveljék a látogatók
+számát. Nem a legmegfelelőbb módja a kattintás vadászatnak ha átveréssel manipuláljuk az embereket. Erre lehet megoldás
+a játékok bevezetése ami már egy másik régbevált módszere annak hogy az emberek újra és újra ellátogassan az adott oldalra.
+Az átverés helyett sokkal jobb megoldás az hogy interaktív felülettel, játékokkal tartjuk meg a közönséget.
+A hirdetéseket optimalizálni lehet az adott felhasználóhoz. Így célzott reklámokat kap az érdeklődési körének megfelelőnek.
 
 5. Igényelt üzleti folyamatok modellje
 
+
+
 6. Használati esetek
+
+A felhasználó megérkezik a webalkalmazás felüretére.
+Ha elnyeri a tettszését egy reklám akkor oda kattintással tovább navigálhat.
+Ha valamelyik játék keltette fel a figyelmét vagy visszatérő játékos akkor a menü segítségével kitudja választani
+a kívánt játékot.
+Esetleg ha visszatér és új reklám jelent meg az lehet hogy jobban felkelti a figyelmét. A reklámokat optimalizálni lehet az adott felhasználóhoz
+egyéb technológiák segítségével.
+A játék indítása után élvezni tudja ingyenesen a játék által nyújtott feladatokat.
 
 7. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
 8. Képernyő tervek
+
+Képernyő tervek mappa tartalmazza.
 
 9. Forgatókönyv
 
 10. Funkció - követelmény megfeleltetés
 
 11. Fogalomszótár
+
+Addiktív - szenvedélyt okozó, függőséget okozó
+"clickbait" - kattintás vadász, olyan tartalom ami félrevezetéssel nézettséget vonz. Kattintásokat.
