@@ -2,13 +2,51 @@ Követelmény specifikáció:
 
 1. Áttekintés
 
+Az alkalmazás célja létrehozni egy olyan felületet ahonnan el lehet érni további több felületet, 
+navigálni tudunk a különböző tartalmak között. Ezek a felületek mindegyike egy egy játékot tartalmaz.
+A játékot akár mikor meg tudjuk szakítani és vissza tudunk navigálna az ugy nevezett menübe ahonnan új játékot válaszhatunk.
+Az alkalmazás webes felülettel fog rendelkezni és a játékok is rögtön a böngészőben fognak futni ezzel elkerülve 
+hogy a játékokat le kelljen tölteni, telepíteni kelljen. A játékos azonnal bele tud vágni a kedvenc programjába. 
+A webalkalmazás és a játékok elkészítéséhez HTML, CSS és Javascript programozási nyelvek lesznek használva.
+
 2. Jelenlegi helyzet
+
+A megrendelő szemlélete szerinte egy olyan oldalt szeretne ami sok látogatót vonz és ebből kiindulva szeretne az oldalon
+hirdető felületeket kiadni bizonyos összegekért. A legjobb megoldás erre egy felület ahonnan több játék érhető el. 
+A játékok külön oldalon helyezkednek el és ezek melett is tud hirdető felületeket kiadni.
+Ezek a játékok egyszerűségük miatt igen addiktív jellegűek tudnak lenni emiatt az új játékosok melett
+visszatérő látogatókat is lehet szerezni. Ezáltal folyamatos nőlni tud a látogatók száma. 
+A játék lényeges ugyanis leköti az embereket főleg ha nagyobb a választék így kedvére valót tud találni közöttük.
+Azért jó megoldás ez például a hírportálok helyett mert hacsak nem történik valami katasztrófa méretű dolog akkor csak 
+cicás top 10-es listákat tudnak megosztani ami elég unalmassá tud válni egy idő után.
 
 3. Vágyálom rendszer
 
+A project célja egy olyan addiktív játékokbol álló felület létrehozása ami a felhasználóknak felkelti a figyelmét
+és miután felkeltette azt megszeretteti velük a felületen elérhető játékokat ezáltal vissza fog térni az oldalra.
+A weboldal felületének figyelem felkeltőnek kell lennie ezzel is felkeltve a felhasználók érdeklődését. 
+Az oldal látogatottságának minél nagyobbnak kell lennie ezáltal több potenciál lesz az oldal hirdető felületeiben és így az alkalmazás
+több profitot tud termelni. Az oldal indulásakor minimum négy játékkal rendelkeznie kell és a felületet ugy kell 
+kialakítani hogy későbbi igények szerint további játékokat lehessen majd hozzáadni a figyelem fentartása érdekében.
+Optimális esetben a kezdő oldalnak tartalmazni kell egy képet a játékról valamint a címét, és egy rövid leírást a program
+lényegéről esetleg szabályrendszeréről.
+
+Az első játék egy memória játék lehetne ahol a párok kiválasztásával tudunk előrehaladni és pontot szerezni. 
+A felületnek egyértelműnek kell lennie és célravezetőnek.
+
 4. Funkcionális követelmények
 
-5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+Főoldal, menü oldal, játék választó oldal:
+	-Ezen az oldalon látjuk az éppen aktuálisan elérhető játékokat.
+	-Itt látjuk a játékok kis képét, és egy leírást az adott játékról.
+	-A felületen reklám felületek láthatók amikre kattintva átnavigálhatunk az adott oldalakra.
+	
+Memória játék oldal:
+	-Játék indítása
+	-Játék nehézségének kiválasztása
+	-Játékfelület a kattintható kártyákkal
+	-Az aktuális pontszám kijelzése
+
 
 6. Jelenlegi üzleti folyamatok modellje
 
@@ -19,3 +57,6 @@ Követelmény specifikáció:
 9. Riportok
 
 10. Fogalomtár
+
+Addiktív - szenvedéjt keltő, függőséget okozó
+Webalkalmazás - böngészőben egyszerűen futtatható alkalmazás
