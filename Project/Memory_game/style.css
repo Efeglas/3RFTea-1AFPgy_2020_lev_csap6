@@ -87,9 +87,22 @@ body{
 }
 
 .cards{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     min-height: 70vh;
+}
+
+.gg{
+    display: none;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg>p{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .card{
@@ -113,11 +126,19 @@ body{
 
 .card>.frontSide{
     color: white;
-    display: flex;
+    display: none;
     justify-content: center;
     background-color: grey;
     border-radius: 10px;
     align-items: center;
     height: 100%;
     font-size: 40px;
+}
+
+.active{
+    display: flex !important;
+}
+
+.correct{
+    visibility: hidden;
 }
