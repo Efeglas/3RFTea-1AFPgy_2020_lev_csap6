@@ -28,7 +28,7 @@ body{
 }
 
 .diffBtns{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 70vh;
@@ -84,4 +84,40 @@ body{
     text-decoration: underline;
     font-weight: bold;
     font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+
+.card{
+    width: calc(25% - 24px);
+    height: 200px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.card>.backSide{
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    border-radius: 10px;
+    height: 100%;
+    font-size: 40px;
+}
+
+.card>.frontSide{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 10px;
+    align-items: center;
+    height: 100%;
+    font-size: 40px;
 }
