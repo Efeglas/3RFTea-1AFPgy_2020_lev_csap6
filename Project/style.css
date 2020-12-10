@@ -67,9 +67,7 @@
     bottom: 5px;
 }
 
-.gameDetails a:hover{
-   
+.gameDetails a:hover{  
     background-color: rgb(39, 136, 226);
-   cursor: pointer;  
-    
+   cursor: pointer;   
 }
