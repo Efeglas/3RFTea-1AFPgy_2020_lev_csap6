@@ -1,0 +1,36 @@
+1. Menü lista tesztelése:
+	-A lista elemen található "Játék kezdése" gomb sikeresen átnavigál a megfelelő játék felületére.
+
+2. Memória játék felület tesztelése:
+
+2.1 Kilépés gomb:
+	- Sikeresen visszanavígál a főoldalra.
+
+2.2 Nehézség választása:
+	- A javascript kódban benne maradtak consol.log() parancsok amik így minden kattintással beleír a böngésző  konzoljába.
+	(Javítva: az összes console.log() parancs kikommentelése későbbi felhasználás miatt)
+
+2.3 Játék indítása:
+	-A nehézség kiválasztása után a játék sikeresen legenerálja a kártyákat viszont ott marad a "Játék indítása" gomb
+	ami így logikai hibákat tud okozni. 
+	(Javítva: játék indításakor elrejtjük a "Játék indítása" gombot így nem lehet tovább rá kattintani.)
+
+2.4 Kártyák összekeverése:
+	-A program kellően összekeveri a kártyákat.
+
+2.5 Kártyák összepárosítása:
+	-A kártyákat megfelelően össze lehet párosítani.
+
+2.6 A játék megnyerése:
+	-Ha minden kártyát sikeresen összepárosítottunk akkor megkapjuk a "Gratulálunk nyertél!" üzenetet.
+
+2.6.1 Választott nehézség felirat:
+	-Nem megfelelő a kíírt nehézség és elrendezés.
+	(Javítva: megfelelő felirat kiiratása nehézség választásakor.)
+
+2.6.2 Megnyeréshez szükséges pontok:
+	-Nehézség választásnál nincs újrakalkulálva a szükséges pont.
+	(Javítva: új nehézség választása esetén ujrakalkuláljuk a szükséges pontot.)
+
+2.7 Új játék kezdése:
+	-Új játék esetén sikeresen viszaálít mindent a kezdő állapotba.

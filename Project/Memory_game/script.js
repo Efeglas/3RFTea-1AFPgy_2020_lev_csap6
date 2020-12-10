@@ -10,6 +10,8 @@ let btnMedium = document.getElementById("diffBtnMedium");
 let btnHard = document.getElementById("diffBtnHard");
 let startBtn = document.getElementById("startBtn");
 
+let gameGrid = document.getElementById("gameGrid");
+
 const createCard = (word, id) => {
     let div = document.createElement("div");
     div.classList.add("card");
@@ -55,31 +57,38 @@ const checkIfItsAMatch = (first, second) => {
             first.classList.add("correct");
             second.classList.add("correct");
             actualScore++;
-            console.log(actualScore);
+            //console.log(actualScore);
         }
     }
 }
 
 btnEasy.addEventListener("click", () => {
     cardsNum = 12;
-    console.log(cardsNum);
+    winScore = cardsNum / 2;
+    gameGrid.innerHTML = "Könnyű (3 x 4)";
+    //console.log(cardsNum);
 });
 
 btnMedium.addEventListener("click", () => {
     cardsNum = 16;
-    console.log(cardsNum);
+    winScore = cardsNum / 2;
+    gameGrid.innerHTML = "Közepes (4 x 4)";
+    //console.log(cardsNum);
 });
 
 btnHard.addEventListener("click", () => {
     cardsNum = 20;
-    console.log(cardsNum);
+    winScore = cardsNum / 2;
+    gameGrid.innerHTML = "Nehéz (5 x 4)";
+    //console.log(cardsNum);
 });
 
 startBtn.addEventListener("click", () => {
     if (document.querySelector(".gameField").firstElementChild.classList.contains("active")) {
+        startBtn.classList.add("correct");
         document.querySelector(".gameField").firstElementChild.classList.remove("active");
         document.querySelector(".gameField").children[1].classList.add("active");
-        console.log(cardsNum);
+        //console.log(cardsNum);
 
         for (let i = 0; i < cardsNum / 2; i++) {
 
@@ -88,7 +97,7 @@ startBtn.addEventListener("click", () => {
         }
 
         let generatedCards = Array.from(document.getElementsByClassName("card"));
-        console.log(generatedCards);
+        //console.log(generatedCards);
 
         for (const card of generatedCards) {
             card.style.order = Math.floor(Math.random() * (cardsNum + 1));
@@ -133,6 +142,7 @@ startBtn.addEventListener("click", () => {
                             document.querySelector(".gameField").children[1].classList.remove("active");
                             document.querySelector(".gameField").children[2].classList.add("active");
                             startBtn.innerHTML = "Új játék";
+                            startBtn.classList.remove("correct");
                         }
                     }, 1500);
                 }
@@ -145,7 +155,8 @@ startBtn.addEventListener("click", () => {
         document.querySelector(".gameField").firstElementChild.classList.add("active");
         startBtn.innerHTML = "Játék indítása";
         actualScore = 0;
+        cardsNum = 12;
         document.querySelector(".cards").innerHTML = "";
+        gameGrid.innerHTML = "Könnyű (3 x 4)";
     }
 });
-
